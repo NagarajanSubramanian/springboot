@@ -73,7 +73,7 @@ function moveSignUp() {
 function validateNumber(event){
 	console.log(event);
 	var value = document.getElementById('phoneno').value;
-	if(!parseInt(value)){
+	if(!parseInt(event['key'])){
 //		document.getElementById('phoneno').value='';
 		event.preventDefault();
 	} else {
